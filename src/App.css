@@ -1,0 +1,228 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 70%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #14213d;
+  color: azure;
+  height: 6rem;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+main {
+  position: relative;
+  background-color: #e5e5e5;
+  flex-grow: 10;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  padding-right: 3rem;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.card {
+  flex-basis: 20%;
+  margin: 1rem;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e5e5;
+}
+
+.card-image {
+  aspect-ratio: 5/3;
+  width: 100%;
+}
+
+.card-name {
+  margin: 1rem auto;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card-button {
+  height: 3rem;
+  border: none;
+  color: #e5e5e5;
+  background-color: #14213d;
+}
+
+.card-button:hover {
+  cursor: pointer;
+  background-color: #243968;
+}
+.add-list-button {
+  font-size: 8rem;
+  background: none;
+  padding: 0 2rem;
+  margin-left: 2rem;
+}
+
+.add-list-button:hover {
+  cursor: pointer;
+  background-color: #cdcccc;
+}
+
+.close-list-button {
+  position: absolute;
+  font-size: 2rem;
+  background-color: #e5e5e5;
+  top: 1rem;
+  left: 1rem;
+}
+
+.close-list-button:hover {
+  cursor: pointer;
+  background-color: #c9c9c9;
+}
+
+.list-name {
+  position: absolute;
+  top: 1px;
+  font-size: 2rem;
+}
+
+.tier-list-div {
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-bottom: none;
+  width: 70vw;
+}
+
+.tier-row {
+  display: flex;
+  height: auto;
+  background-color: #14213d;
+  border-bottom: solid 2px black;
+  min-height: 7rem;
+}
+
+.tier-row:last-child {
+  height: 5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cdcccc;
+  color: #14213d;
+  font-weight: 600;
+  min-height: 2rem;
+}
+
+.tier-row:last-child:hover {
+  cursor: pointer;
+  background-color: #b6b5b5;
+}
+
+.row-title {
+  height: 100%;
+  height: auto;
+  max-width: 9rem;
+  font-size: 2rem;
+  resize: none;
+  overflow: auto;
+  text-align: center;
+  white-space: pre-wrap;
+  box-sizing: border-box;
+  background-color: #c9c9c9;
+  border-right: 2px solid black;
+}
+
+.row-title:focus {
+  outline: none;
+}
+
+.row-title::-webkit-scrollbar {
+  display: none;
+}
+
+.row-content {
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.row-image {
+  height: 5rem;
+  z-index: 10;
+}
+
+.content-area {
+  z-index: 0;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  bottom: 3rem;
+  min-width: 75vw;
+  background-color: #b6b5b5;
+  min-height: 20rem;
+}
+
+/* .content-image {
+  height: 5rem;
+} */
+
+footer {
+  height: 5rem;
+  background-color: #14213d;
+  width: 100%;
+}
+
+form {
+  position: absolute;
+  top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+}
+
+form h2 {
+  font-size: 4rem;
+}
+
+.form-div {
+  font-size: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.form-button {
+  width: 10rem;
+  margin: auto;
+  padding: 1rem;
+  text-transform: uppercase;
+  background-color: #14213d;
+  color: #c9c9c9;
+  outline: none;
+  border: none;
+}
+
+.form-button:hover {
+  cursor: pointer;
+  background-color: #243968;
+}
