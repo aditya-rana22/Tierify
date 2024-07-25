@@ -1,4 +1,20 @@
-# Getting Started with Create React App
+# Tierify
+
+Tierify is a React-based web application that allows users to create and manage tier lists. The project includes drag-and-drop functionality using `@dnd-kit` and utilizes the FileReader API for temporarily uploading photos.
+
+## Features
+
+- **Drag and Drop**: Easily rearrange items within the tier list using the `@dnd-kit` library.
+- **Image Upload**: Upload images temporarily using the FileReader API to customize tier items.
+- **Customizable Tiers**: Add, remove, and rename tiers to suit your categorization needs.
+
+## Technologies Used
+
+- **React**: A JavaScript library for building user interfaces.
+- **@dnd-kit**: A modern drag-and-drop toolkit for React.
+- **FileReader API**: An API for reading files asynchronously, used here for uploading images.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
