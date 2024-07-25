@@ -156,6 +156,7 @@ function ListForm({ setListData, setListFormIsActive }) {
 
     if (!file.type.startsWith("image/")) {
       setError("Please upload an image file.");
+      console.log(error);
       return;
     }
 
@@ -361,10 +362,6 @@ function ContentArea({ setUploadedImages, uploadedImages }) {
       />
     </div>
   );
-}
-
-function Footer() {
-  return <footer></footer>;
 }
 
 export default App;
